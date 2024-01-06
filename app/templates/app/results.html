@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<h1>Thanks for greate choice!</h1>
+<ul> 
+    {% for choice in question.choice_set.all %} 
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} answer{{ choice.votes|pluralize }}</li>
+    {% endfor %} 
+</ul>
+<a href="{% url 'app:coding' %}">Next question?</a>
+
+
+{% endblock content %}

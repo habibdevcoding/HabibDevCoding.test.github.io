@@ -1,0 +1,29 @@
+/* body{
+    background-color: #E5E5E5;
+}
+
+.section--1{
+    background-color: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section--2{
+    background-color: #E5E5E5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+} */
+
+
+
+.navigation-bar{
+    background-color: #553552;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav-link{
+    color: #fff;
+}

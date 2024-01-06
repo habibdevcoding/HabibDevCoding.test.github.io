@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<li>{{ question.question_text }}</li>
+
+{% if latest_question_list %} 
+<ul> 
+    {% for question in latest_question_list %} 
+    <li>{{ question.question_text }}</li>
+    {% endfor %} 
+    </ul> 
+    <h1>Are You Ready for an Exam? <a href="{% url 'app:register' %}">Register</a></h1>
+    {% else %}
+     <p>No polls are available.</p> 
+{% endif %}
+
+{% endblock content %}
